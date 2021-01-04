@@ -1,0 +1,319 @@
+/* @font-face{
+  font-family: "sauvetage";
+  src:url('../fonts/Top\ Secret.ttf') format('truetype');
+} */
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=top-secret');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: rgb(243, 240, 240);
+  font-family: sans-serif;
+	display:flex;
+	flex-direction:column;
+}
+
+a {
+  cursor: url("../img/cursor.png"), default;
+  text-decoration: none;
+}
+
+.landing {
+  position: relative;
+ top: 12vh;
+  
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.menu-logo {
+  line-height: 0;
+  margin: 5px 20px;
+}
+
+.logoSpa {
+  width: 5rem;
+
+  flex-shrink: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  height: 12vh;
+  width: 100%;
+  background: #ffffff;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li{
+  margin-right: 1rem;
+  color: #646464;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a {
+  color: #646464;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover{
+  color:  #EB641A;
+}
+
+.nav-links li a:hover{
+  color:  #EB641A;
+}
+
+
+
+
+.menu-pensionnaires:hover .cat-pensionnaires{
+  opacity: 1;
+  visibility:visible;
+  background-color: #fff;
+}
+
+.cat-pensionnaires{
+  position: absolute;
+  padding-left: 0;
+  list-style: none;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cat-pensionnaires li{
+  margin-top: 1rem;
+}
+
+
+
+
+.title-pensionnaires{
+  font-family: 'Nothing You Could Do', cursive;
+  color: #464444;
+  font-size: 400%;
+  text-align: center;
+}
+
+.sauvetage{
+  color: rgb(221, 22, 22);
+  font-family: 'Top Secret Bold', arial;
+  /* font-family: 'sauvetage'; */
+}
+/* ////////////////////// FOOTER ///////////////////////////// */
+footer {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background: #d4d4d4;
+  z-index: 1001;
+}
+
+.contactFooter {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 20px;
+  justify-content:space-between
+}
+
+.contactFooter p {
+  padding: 0 10px 0 10px;
+}
+
+.logoSvg {
+  width: 1.5rem;
+  margin-right: 10px;
+}
+
+
+/* ///////////////////////////////// MEDIA //////////////////////////////////// */
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: rgb(47, 47, 47);
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+  .nav-links{
+    justify-content:space-around
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .hamburger.active .line:nth-child(1){
+    transform: rotate(143deg);
+    -webkit-transform: rotate(143deg);
+    -moz-transform: rotate(143deg);
+    -ms-transform: rotate(143deg);
+    -o-transform: rotate(143deg);
+}
+  .hamburger.active .line:nth-child(2){
+    transform: translateX(-20px);
+    opacity: 0;
+
+}
+  .hamburger.active .line:nth-child(3){
+    transform: rotate(-143deg);
+    -webkit-transform: rotate(-143deg);
+    -moz-transform: rotate(-143deg);
+    -ms-transform: rotate(-143deg);
+    -o-transform: rotate(-143deg);
+}
+
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all .5s ease-out;
+    pointer-events: none;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+
+div [class^="col-"]{
+  padding-left:5px;
+  padding-right:5px;
+}
+.card{
+  background-color: #dfdfdf;
+  margin-bottom: 10px;
+  transition:0.5s;
+  cursor: url("../img/cursor.png"), default;
+}
+
+.card-header{
+  font-size:2remx;
+  transition:1s;
+  color:#EB641A
+}
+
+.sexAge{
+  display: flex;
+}
+.card-title{  
+  font-size:1.2rem;
+  margin-right: 10px;
+  transition:1s;
+  color:#464444
+}
+.card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.race{
+  color: #464444;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
