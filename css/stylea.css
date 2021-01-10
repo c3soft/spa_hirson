@@ -267,6 +267,13 @@ div [class^="col-"]{
 .sexAge{
   display: flex;
 }
+
+.rescue{
+  transform: rotate(20deg);
+  color: rgb(221, 22, 22);
+  font-family: 'Top Secret Bold', arial;
+}
+
 .card-title{  
   font-size:1.2rem;
   margin-right: 10px;
