@@ -14,7 +14,7 @@
 
 body {
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: rgb(243, 240, 240);
   font-family: sans-serif;
 	display:flex;
@@ -443,6 +443,7 @@ div [class^="col-"]{
 
 .landing-contact{
   position: relative;
+  
 }
 
 .card-contact{
@@ -491,7 +492,7 @@ div [class^="col-"]{
 }
 
 .maCarte { 
-  height: 80vh; 
+  height: 75vh; 
 }
 
 /* /////////////////////////////////// MODAL //////////////////// */
