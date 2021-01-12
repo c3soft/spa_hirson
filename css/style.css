@@ -15,6 +15,7 @@
 body {
   min-height: 100vh;
   /* overflow: hidden; */
+  overflow-x: hidden;
   background-color: rgb(243, 240, 240);
   font-family: sans-serif;
 	display:flex;
@@ -157,40 +158,47 @@ footer {
 
 /* ///////////////////////////////// SPRITE ANIMATION //////////////////////////////////// */
 
-.cat {
+/* .sprite{
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: -500px;
+} */
+
+/* .cat {
   width: 195px;
   height: 100px;
-  position: absolute;
-  overflow: hidden;
-  left: -500px;
+  position: absolute; 
+  left: 0px;
   top: 90px;
   background-image: url("../img/catSprite.png");
-  animation: walkCat .5s steps(13) 7,    run 3s linear 1;
+  animation: walkCat .5s steps(13) 7, 
+     run 3s linear 1;
 
-}
+} */
 
 @keyframes walkCat {
   100% {
-    background-position: 0 -1265px;
+    background-position: 0 -1265px;/* Largeur image */
   }
 }
 
-@keyframes run {
+/* @keyframes run {
   100% {
-    transform: translateX(2400px);
+    transform: translateX(100%);
     -webkit-transform: translateX(2400px);
     -moz-transform: translateX(2400px);
     -ms-transform: translateX(2400px);
     -o-transform: translateX(2400px);
 }
-}
+} */
 
-.dog {
+/* .dog {
   width: 240px;
   height: 180px;
-  position: absolute;
-  top: 0;
-  left: -700px;
+ 
   background-image: url("../img/dogSprite.png");
   animation: walkDog .3s steps(4) infinite,
     moveDog 3.2s linear 1;
@@ -207,9 +215,32 @@ footer {
     transform: translateX(2500px);
 
   }
+} */
+
+/* --------------- DOG 2 --------------- */
+
+.dog {
+  width: 145px;
+  height: 100px;
+  position: absolute;
+  top: 90px;
+  left: -140px;
+  background-image: url("../img/sprite/dog.png");
+  animation: walkDog .6s steps(6) 4
+    , moveDog 2.7s linear 1;
 }
 
+@keyframes walkDog {
+  100% {
+    background-position: -960px;
+  }
+}
 
+ @keyframes moveDog {
+  100% {
+    transform: translateX(2500px);
+  } 
+}
 /* ///////////////////////////////// FICHE //////////////////////////////////// */
 
 .landing-fiche{
