@@ -42,3 +42,12 @@ window.addEventListener('load', () =>{
 
     Tl.play();
     })
+
+
+    // ANIMATION SVG
+
+    const logoSvg = document.querySelectorAll("#logoSvg path");
+    console.log(logoSvg);
+    for(let i=0; i<logoSvg; i++){
+        console.log(`Letter ${i} is ${logoSvg[i].getTotalLength()}`)
+    }

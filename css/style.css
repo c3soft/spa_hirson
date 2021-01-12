@@ -14,7 +14,6 @@
 
 body {
   min-height: 100vh;
-  /* overflow: hidden; */
   overflow-x: hidden;
   background-color: rgb(243, 240, 240);
   font-family: sans-serif;
@@ -48,6 +47,13 @@ a {
   margin-top: 0;
 }
 
+.title-pensionnaires{
+  font-family: 'Nothing You Could Do', cursive;
+  color: #464444;
+  font-size: 400%;
+  text-align: center;
+}
+/* ////////////////// NAVBAR //////////////////////// */
 .menu-logo {
   line-height: 0;
   margin: 5px 20px;
@@ -97,6 +103,7 @@ nav {
   color:  #EB641A;
 }
 
+/* ///////////////////// DONS //////////////////////////// */
 .don{
   background-color: #EB641A;
   color: #f8f6f6 !important;
@@ -167,17 +174,17 @@ footer {
   left: -500px;
 } */
 
-/* .cat {
+.cat {
   width: 195px;
   height: 100px;
   position: absolute; 
-  left: 0px;
+  left: -190px;
   top: 90px;
   background-image: url("../img/catSprite.png");
   animation: walkCat .5s steps(13) 7, 
      run 3s linear 1;
 
-} */
+}
 
 @keyframes walkCat {
   100% {
@@ -185,7 +192,7 @@ footer {
   }
 }
 
-/* @keyframes run {
+@keyframes run {
   100% {
     transform: translateX(100%);
     -webkit-transform: translateX(2400px);
@@ -193,12 +200,11 @@ footer {
     -ms-transform: translateX(2400px);
     -o-transform: translateX(2400px);
 }
-} */
+}
 
 /* .dog {
   width: 240px;
   height: 180px;
- 
   background-image: url("../img/dogSprite.png");
   animation: walkDog .3s steps(4) infinite,
     moveDog 3.2s linear 1;
@@ -213,7 +219,6 @@ footer {
 @keyframes moveDog {
   100% {
     transform: translateX(2500px);
-
   }
 } */
 
@@ -411,8 +416,10 @@ div [class^="col-"]{
   padding-right:5px;
 }
 .card{
+  background-color: #d6d5d5;
+  margin-bottom: 20px;
   transition:0.5s;
-  cursor:pointer;
+  /* cursor:pointer; */
 }
 
 .card-header{
@@ -424,6 +431,13 @@ div [class^="col-"]{
 .sexAge{
   display: flex;
 }
+
+.rescue{
+  transform: rotate(20deg);
+  color: rgb(221, 22, 22);
+  font-family: 'Top Secret Bold', arial;
+}
+
 .card-title{  
   font-size:1.2rem;
   margin-right: 10px;
@@ -447,6 +461,10 @@ div [class^="col-"]{
 }
 .card-text{
   height:80px;  
+}
+
+.race{
+  color: #464444;
 }
 
 .card::before, .card::after {

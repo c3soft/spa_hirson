@@ -255,7 +255,7 @@ div [class^="col-"]{
   background-color: #dfdfdf;
   margin-bottom: 10px;
   transition:0.5s;
-  cursor: url("../img/cursor.png"), default;
+  /* cursor: url("../img/cursor.png"), default; */
 }
 
 .card-header{

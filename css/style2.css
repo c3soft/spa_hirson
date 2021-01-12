@@ -36,9 +36,12 @@ h1{
     /* text-transform: uppercase; */
     font-size: 6vw;
     color: #ececec;
+    
     /* letter-spacing: 10px; */
     /* font-family: Abril fatface, sans-serif; */
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Bowlby One SC', cursive; */
+    /* font-family: 'Fjalla One', sans-serif; */
 }
 
 h1 span{
@@ -48,9 +51,10 @@ h1 span{
 .container-btns{
     position: absolute;
     top: 230%;
+    font-size: 20px;
 }
 
-.btn-first{
+/* .btn-first{
     border: 2px solid #f1f1f1;
     outline: none;
     background: transparent;
@@ -59,9 +63,9 @@ h1 span{
     width: 300px;
     color: #f1f1f1;
     cursor: pointer;
-}
+} */
 
-.btn-first:nth-child(1){
+/* .btn-first:nth-child(1){
     margin-right: 30px;
 }
 
@@ -69,7 +73,7 @@ h1 span{
     transition: all 0.3s ease-in-out;
     background: #f1f1f1;
     color: #333333;
-}
+} */
 
 /* .lignes{
     position: absolute;
@@ -134,4 +138,136 @@ h1 span{
     top: 50%;
     transform: translateY(25%);
 
+} */
+
+
+/* /////////////////////////// SVG //////////////////////////// */
+
+#logoSvg{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    /* transform: translate(-50%, -50%); */
+    animation: fill 0.5s ease;
+}
+
+#logoSvg path:nth-child(1){
+    stroke-dasharray: 537px;
+    stroke-dashoffset: 537px;
+    animation: line-anim 2s ease forwards;
+}
+#logoSvg path:nth-child(2){
+    stroke-dasharray: 472px;
+    stroke-dashoffset: 472px;
+    animation: line-anim 2s ease forwards 0.3s;
+    -webkit-animation: line-anim 2s ease forwards 0.3s;
+}
+#logoSvg path:nth-child(3){
+    stroke-dasharray: 343px;
+    stroke-dashoffset: 343px;
+    animation: line-anim 2s ease forwards 0.6s;
+    -webkit-animation: line-anim 2s ease forwards 0.6s;
+}
+#logoSvg path:nth-child(4){
+    stroke-dasharray: 386px;
+    stroke-dashoffset: 386px;
+    animation: line-anim 2s ease forwards 0.9s;
+    -webkit-animation: line-anim 2s ease forwards 0.9s;
+}
+#logoSvg path:nth-child(5){
+    stroke-dasharray: 476px;
+    stroke-dashoffset: 476px;
+    animation: line-anim 2s ease forwards 1.2s;
+    -webkit-animation: line-anim 2s ease forwards 1.2s;
+}
+#logoSvg path:nth-child(6){
+    stroke-dasharray: 326px;
+    stroke-dashoffset: 326px;
+    animation: line-anim 2s ease forwards 1.5s;
+    -webkit-animation: line-anim 2s ease forwards 1.5s;
+}
+#logoSvg path:nth-child(7){
+   stroke-dasharray: 484px;
+   stroke-dashoffset: 484px;
+   animation: line-anim 2s ease forwards 1.8s;
+   -webkit-animation: line-anim 2s ease forwards 1.8s;
+}
+#logoSvg path:nth-child(8){
+   stroke-dasharray: 580px;
+   stroke-dashoffset: 580px;
+   animation: line-anim 2s ease forwards 2.1s;
+   -webkit-animation: line-anim 2s ease forwards 2.1s;
+}
+#logoSvg path:nth-child(9){
+    stroke-dasharray: 537px;
+    stroke-dashoffset: 537px;
+    animation: line-anim 2s ease forwards 2.4s;
+    -webkit-animation: line-anim 2s ease forwards 2.4s;
+}
+#logoSvg path:nth-child(10){
+    stroke-dasharray: 472px;
+    stroke-dashoffset: 472px;
+    animation: line-anim 2s ease forwards 2.7s;
+    -webkit-animation: line-anim 2s ease forwards 2.7s;
+}
+#logoSvg path:nth-child(11){
+    stroke-dasharray: 343px;
+    stroke-dashoffset: 343px;
+    animation: line-anim 2s ease forwards 3s;
+    -webkit-animation: line-anim 2s ease forwards 3s;
+}
+#logoSvg path:nth-child(12){
+    stroke-dasharray: 386px;
+    stroke-dashoffset: 386px;
+    animation: line-anim 2s ease forwards 3.3s;
+    -webkit-animation: line-anim 2s ease forwards 3.3s;
+}
+#logoSvg path:nth-child(13){
+    stroke-dasharray: 476px;
+    stroke-dashoffset: 476px;
+    animation: line-anim 2s ease forwards 3.6s;
+    -webkit-animation: line-anim 2s ease forwards 3.6s;
+}
+#logoSvg path:nth-child(14){
+    stroke-dasharray: 326px;
+    stroke-dashoffset: 326px;
+    animation: line-anim 2s ease forwards 3.9s;
+    -webkit-animation: line-anim 2s ease forwards 3.9s;
+}
+#logoSvg path:nth-child(15){
+   stroke-dasharray: 484px;
+   stroke-dashoffset: 484px;
+   animation: line-anim 2s ease forwards 4.2s;
+   -webkit-animation: line-anim 2s ease forwards 4.2s;
+}
+#logoSvg path:nth-child(16){
+   stroke-dasharray: 580px;
+   stroke-dashoffset: 580px;
+   animation: line-anim 2s ease forwards 4.5s;
+   -webkit-animation: line-anim 2s ease forwards 4.5s;
+}
+
+
+
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #ececec;
+    }
+}
+
+/* @keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #f1f1f1
+    }
 } */
