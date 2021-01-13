@@ -35,9 +35,10 @@ window.addEventListener('load', () =>{
         '-=2')
 
     .staggerFrom(medias, 0.5, {
-        right: -200,
+        top: -150,
+        opacity: 0,
         ease: "power2.out"},
-        0.3, '-=1')
+        0.3)
     
 
     Tl.play();

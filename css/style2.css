@@ -140,7 +140,20 @@ h1 span{
 
 } */
 
+/* /////////////////////////// NAVBAR ////////////////////////// */
+.nav-item{
+    margin: 1rem;
+    border: .5px solid #f1f1f1;
+    border-radius: 50%;
+}
 
+.navbar-nav{
+    transform: translateX(50%);
+}
+.nav-link img{
+    margin: .5rem;
+    width: 3.5rem;
+}
 /* /////////////////////////// SVG //////////////////////////// */
 
 #logoSvg{
