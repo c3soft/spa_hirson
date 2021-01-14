@@ -83,11 +83,11 @@ nav {
 }
 
 .nav-links li:hover{
-  color:  #EB641A;
+  color:  #00678E;
 }
 
 .nav-links li a:hover{
-  color:  #EB641A;
+  color:  #00678E;
 }
 
 
@@ -261,7 +261,7 @@ div [class^="col-"]{
 .card-header{
   font-size:2remx;
   transition:1s;
-  color:#EB641A
+  color:#00678E
 }
 
 .sexAge{
