@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicons -->
- 
 
-<link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-<link rel="manifest" href="./img/favicon/site.webmanifest">
-<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
 
 
@@ -32,9 +32,9 @@
   <link rel="stylesheet" href="./css/style2.css">
 </head>
 
-<!-- <body onload="init()"> -->
+<body onload="init()">
 
-<body>
+  <!-- <body> -->
 
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
     <div class="container-fluid">
@@ -51,7 +51,9 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown bulle">
+
+          <div class="menu-circle">
+             <li class="nav-item dropdown bulle">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <img src="./img/icons/refuge.svg" alt="" srcset="">
@@ -61,29 +63,50 @@
               <li><a class="dropdown-item" href="./adoption_cats.html">Nos chats</a></li>
             </ul>
           </li>
+          </div>
+         
 
-          <li class="nav-item bulle">
-            <a class="nav-link" href="./event.html"><img src="./img/icons/event.svg" alt="" srcset=""></a>
-          </li>
+          <div class="menu-circle">
+            <li class="nav-item bulle">
+              <a class="nav-link" href="./event.html"><img src="./img/icons/event.svg" alt="" srcset=""></a>
+            </li>
+            <p>Evénements</p>
+          </div>
 
-          <li class="nav-item bulle">
-            <a class="nav-link" href="./rules.html"><img src="./img/icons/rules.svg" alt="" srcset=""></a>
-          </li>
+          <div class="menu-circle">
+            <li class="nav-item bulle">
+              <a class="nav-link" href="./rules.html"><img src="./img/icons/rules.svg" alt="" srcset=""></a>
+            </li>
+            <p>Nos rèles</p>
+          </div>
 
-          <li class="nav-item bulle">
-            <a class="nav-link" href="./contact.html"><img src="./img/icons/email.svg" alt="" srcset=""></a>
-          </li>
+          <div class="menu-circle">
+            <li class="nav-item bulle">
+              <a class="nav-link" href="./contact.html"><img src="./img/icons/email.svg" alt="" srcset=""></a>
+            </li>
+            <p>Contactez-nous</p>
+          </div>
 
-          <li class="nav-item bulle">
-            <a class="nav-link" href="./don.html"><img src="./img/icons/don.svg" alt="" srcset=""></a>
-          </li>
+          <div class="menu-circle">
+            <li class="nav-item bulle">
+              <a class="nav-link" href="./don.html"><img src="./img/icons/don.svg" alt="" srcset=""></a>
+            </li>
+            <p>Faire un don</p>
+          </div>
+
 
         </ul>
       </div>
     </div>
   </nav>
 
-
+  <div class="tooltip-menus">
+    <p>aaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaa</p>
+  </div>
   <div class="container-first">
     <h1>
       <span>S </span>
@@ -143,6 +166,23 @@
           d="M812.625 72.9688C812.5 72.9062 812.5 72.1875 812.625 70.8125C812.812 69.375 813.062 67.5938 813.375 65.4688C813.688 63.3438 814.094 61 814.594 58.4375C815.094 55.875 815.625 53.4375 816.188 51.125C816.75 48.75 817.344 46.6875 817.969 44.9375C818.656 43.125 819.312 41.875 819.938 41.1875C820.375 40.75 820.812 40.75 821.25 41.1875C821.688 41.5625 822.125 42.0625 822.562 42.6875C823 43.25 823.438 43.7813 823.875 44.2813C824.312 44.7188 824.781 44.75 825.281 44.375C827.031 41.9375 828.938 39.625 831 37.4375C833.125 35.1875 835.469 33.25 838.031 31.625C838.281 31.4375 838.969 31.1563 840.094 30.7813C841.219 30.3438 842.5 29.9375 843.938 29.5625C845.375 29.125 846.844 28.7813 848.344 28.5313C849.906 28.2188 851.219 28.0938 852.281 28.1563C853.406 28.1563 854.156 28.4375 854.531 29C854.969 29.5 854.781 30.375 853.969 31.625C850.219 31.6875 846.719 32.7813 843.469 34.9063C840.219 37.0313 837.219 39.6563 834.469 42.7813C831.719 45.9063 829.219 49.3125 826.969 53C824.719 56.625 822.75 60 821.062 63.125C819.438 66.25 818.062 68.8438 816.938 70.9062C815.875 72.9688 815.094 74 814.594 74C814.531 74 814.25 73.875 813.75 73.625C813.25 73.3125 812.875 73.0938 812.625 72.9688Z"
           stroke="#F1F1F1" mask="url(#path-1-outside-1)" />
       </svg>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Evénement à venir</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/events/event.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap -->

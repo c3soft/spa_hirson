@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 }
 
 a {
-    text-decoration: none;
+    cursor: url("../img/cursorW.png"), default !important;
   }
 
 .container-first{
@@ -56,6 +57,15 @@ h1 span{
     margin: 1rem;
     border: 2.5px solid rgba(236, 236, 236, 0.644);
     border-radius: 50%;
+    transition: border .7s ease-in-out;
+}
+.nav-item:hover{
+    border: 2.5px solid transparent;
+}
+
+
+.nav-item:hover ~p{
+    opacity: 1
 }
 
 .navbar-nav{
@@ -64,6 +74,28 @@ h1 span{
 .nav-link img{
     margin: .5rem;
     width: 3.5rem;
+}
+
+.dropdown-menu{
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.dropdown-menu li a{
+    color: #ececec;
+}
+
+
+.menu-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-circle p{
+    color: #ececec;
+    opacity: 0;
+    transition: opacity .9s ease-out;
 }
 /* /////////////////////////// SVG //////////////////////////// */
 
