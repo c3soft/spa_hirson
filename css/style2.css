@@ -49,7 +49,7 @@ h1 span{
 /* /////////////////////////// NAVBAR ////////////////////////// */
 .nav-item{
     margin: 1rem;
-    border: .5px solid #ececec;
+    border: 2.5px solid rgba(236, 236, 236, 0.644);
     border-radius: 50%;
 }
 

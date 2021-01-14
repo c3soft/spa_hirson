@@ -172,7 +172,7 @@ footer {
   position: absolute; 
   left: -190px;
   top: 22px;
-  background-image: url("../img/catSprite.png");
+  background-image: url("../img/sprite/catSprite.png");
   animation: walkCat .5s steps(13) 7, 
      run 3s linear 1;
 
@@ -222,7 +222,7 @@ footer {
   position: absolute;
   top: 22px;
   left: -140px;
-  background-image: url("../img/sprite/dog.png");
+  background-image: url("../img/sprite/dogSprite.png");
   animation: walkDog .6s steps(6) 4
     , moveDog 2.7s linear 1;
 }
