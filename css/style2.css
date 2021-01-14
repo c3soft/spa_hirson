@@ -12,7 +12,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    cursor: url("../img/cursorW.png"), default;
 }
+
+a {
+    text-decoration: none;
+  }
 
 .container-first{
     position: absolute;
