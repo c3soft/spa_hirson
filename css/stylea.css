@@ -117,7 +117,7 @@ nav {
 
 .title-pensionnaires{
   font-family: 'Nothing You Could Do', cursive;
-  color: #464444;
+  color: #ececec;
   font-size: 400%;
   text-align: center;
 }
@@ -278,7 +278,7 @@ div [class^="col-"]{
   font-size:1.2rem;
   margin-right: 10px;
   transition:1s;
-  color:#464444
+  color:#ececec
 }
 .card-title i{  
   font-size:15px;
@@ -300,7 +300,7 @@ div [class^="col-"]{
 }
 
 .race{
-  color: #464444;
+  color: #ececec;
 }
 
 .card::before, .card::after {
