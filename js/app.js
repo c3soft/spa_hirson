@@ -10,8 +10,3 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
-
-function init(){
-  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-    myModal.show();
-}

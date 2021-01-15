@@ -52,3 +52,11 @@ window.addEventListener('load', () =>{
     for(let i=0; i<logoSvg; i++){
         console.log(`Letter ${i} is ${logoSvg[i].getTotalLength()}`)
     }
+
+
+    // Modal event
+
+    function init(){
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+          myModal.show();
+      }
