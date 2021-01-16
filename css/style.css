@@ -1,9 +1,14 @@
 /* @font-face{
   font-family: "sauvetage";
-  src:url('../fonts/Top\ Secret.ttf') format('truetype');
+  src:url('../fonts/Top/Secret.ttf') format('truetype');
 } */
+@font-face{
+  font-family: "stamp";
+  src: url('../fonts/old_stamper.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-@import url('https://allfont.net/allfont.css?fonts=top-secret');
+/* @import url('https://allfont.net/allfont.css?fonts=top-secret'); */
 
 *, ::before, ::after {
   margin: 0;
@@ -242,6 +247,7 @@ footer {
 
 .landing-fiche{
   flex: 1 0 auto;
+  color: #f1f1f1;
 }
 
 .title-fiche{
@@ -251,7 +257,8 @@ footer {
 }
 .sauvetage{
   color: rgb(221, 22, 22);
-  font-family: 'Top Secret Bold', arial;
+  /* font-family: 'sauvetage', arial; */
+  font-family: 'stamp', arial;
 }
 .img-carousel{
   width: 40rem !important;
@@ -431,7 +438,7 @@ div [class^="col-"]{
   font-size:1.2rem;
   margin-right: 10px;
   transition:1s;
-  color:#ececec
+  color:#424242
 }
 .card-title i{  
   font-size:15px;
@@ -453,7 +460,7 @@ div [class^="col-"]{
 }
 
 .race{
-  color: #ececec;
+  color: #424242;
 }
 
 .card::before, .card::after {
