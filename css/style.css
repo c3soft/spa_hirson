@@ -1,14 +1,9 @@
-/* @font-face{
-  font-family: "sauvetage";
-  src:url('../fonts/Top/Secret.ttf') format('truetype');
-} */
 @font-face{
   font-family: "stamp";
   src: url('../fonts/old_stamper.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-/* @import url('https://allfont.net/allfont.css?fonts=top-secret'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap'); */
 
 *, ::before, ::after {
   margin: 0;
@@ -539,3 +534,7 @@ div [class^="col-"]{
   height: 75vh; 
 }
 
+/* ///////////////// Evenements //////////////// */
+.table{
+  color: #f1f1f1;
+}
