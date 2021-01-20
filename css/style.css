@@ -538,3 +538,90 @@ div [class^="col-"]{
 .table{
   color: #f1f1f1;
 }
+
+/* /////////////////////// RULES ////////////////////// */
+.container-rules{
+  min-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around
+}
+.rule{
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  -webkit-transform: perspective(2000px);
+  -moz-transform: perspective(2000px);
+  -ms-transform: perspective(2000px);
+  -o-transform: perspective(2000px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5)
+}
+
+.rule:hover{
+  z-index: 1000;
+  transform: perspective(2000px) rotate(-10deg);
+  -webkit-transform: perspective(2000px) rotate(-10deg);
+  -moz-transform: perspective(2000px) rotate(-10deg);
+  -ms-transform: perspective(2000px) rotate(-10deg);
+  -o-transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5)
+}
+
+.rule .imgBox{
+  background-color: rgb(236, 234, 234);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.rule:hover .imgBox{
+  transform: rotateY(-135deg);
+  -webkit-transform: rotateY(-135deg);
+  -moz-transform: rotateY(-135deg);
+  -ms-transform: rotateY(-135deg);
+  -o-transform: rotateY(-135deg);
+
+}
+
+.rule .imgBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* width: 300px;
+  height: 400px; */
+  object-fit: cover;
+}
+
+.img-rule3{
+  width: 200px;
+}
+.rule .details{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
