@@ -55,13 +55,13 @@ a {
   text-align: center;
 }
 /* ////////////////// NAVBAR //////////////////////// */
-.menu-logo {
-  line-height: 0;
+/*.menu-logo {
+   line-height: 0; 
   margin: 5px 20px;
-}
+}*/
 
 .logoSpa {
-  width: 6rem;
+  width: 10rem;
   flex-shrink: 0;
 }
 
@@ -79,6 +79,7 @@ nav {
   justify-content: start;
   align-items: center;
   margin-left: auto;
+  margin-bottom: 0;
 }
 
 .nav-links li{
@@ -625,3 +626,5 @@ div [class^="col-"]{
   height: 80%;
   object-fit: cover;
 }
+
+/* ///////////////////////// DON ////////////////////////// */
