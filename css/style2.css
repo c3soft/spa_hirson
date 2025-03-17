@@ -104,15 +104,22 @@ a {
 
 .container-svg{
     position: absolute;
-    top: 230%;
+    top: 200%;
 }
 
-#logoSvg{
+.container-svg h2{
+    color: #ececec;
+    letter-spacing: 16px;
+    font-size: 4rem;
+    font-family: Montserrat;
+}
+
+/* #logoSvg{
     position: absolute; 
     top: 80px;
     left: 50px;
     animation: fill 0.5s ease;
-    /* width: 230px; */
+
 }
 
 #logoSvg path:nth-child(1){
@@ -221,7 +228,7 @@ a {
     to{
         fill: #ececec;
     }
-}
+} */
 
 /* @keyframes fill{
     from{
